@@ -2,7 +2,7 @@ import "./App.css";
 import { getAll } from "./actions";
 import { connect } from "react-redux";
 
-function App({ users, getUsers }) {
+function App({ users = [], getUsers }) {
   return (
     <div>
       <button onClick={getUsers}>Show All Users</button>
